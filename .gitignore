@@ -1,4 +1,5 @@
 # Custom rules
+input*
 *.txt
 .vscode
 

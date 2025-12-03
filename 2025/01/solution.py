@@ -12,7 +12,7 @@ class Solution:
     }
 
     @classmethod
-    def read_input(cls, f_path: Path) -> list[str]:
+    def read_input(cls, f_path: str | Path) -> list[str]:
         """Read and parse the puzzle input."""
         return Path(f_path).read_text(encoding="utf-8").split()
 
