@@ -55,8 +55,6 @@ class Solution:
             if curr_pos == 0:
                 password += 1
 
-            print(f"{instr=}, {curr_pos=}, {zero_crossings=}, {password=}")
-
         print(f"The password for Part 2 is {password}")
 
     @classmethod
@@ -91,8 +89,6 @@ class Solution:
 
             if curr_pos == 0:
                 password += 1
-
-            print(f"{instr=}, {curr_pos=}, {crossed_zero=}, {password=}")
 
         print(f"The password for Part 2 is {password}")
 
