@@ -10,7 +10,7 @@ class Solution:
         return Path(f_path).read_text(encoding="utf-8").split()
 
     @classmethod
-    def part_1(cls, banks: list[str]) -> None:
+    def part_1(cls, banks: list[str]) -> int:
         """Solution to Part 1."""
         joltages = []
 
@@ -25,10 +25,36 @@ class Solution:
 
             joltages.append(max_joltage)
 
-        print(f"The solution for Part 1 is {sum(joltages)}")
+        return sum(joltages)
 
+    @classmethod
+    def part_2(cls, inp: list[str]) -> int:
+        """Greedy solution to Part 2."""
+        joltages = []
+        bank_len = len(inp[0])
+        joltage_len = 12
+
+        for bank in inp:
+            max_joltage = []
+            start_idx = 0
+
+            for pos in range(joltage_len):
+                remaining = joltage_len - pos - 1
+                max_idx = bank_len - remaining
+                max_val = max(bank[start_idx:max_idx])
+
+                for i in range(start_idx, max_idx):
+                    if bank[i] == max_val:
+                        max_joltage.append(max_val)
+                        start_idx = i + 1
+                        break
+
+            joltages.append(int("".join(max_joltage)))
+
+        return sum(joltages)
 
 
 if __name__ == "__main__":
     input = Solution.read_input(Path("input.txt"))
-    Solution.part_1(input)
+    print(f"The solution for Part 1 is {Solution.part_1(input)}")
+    print(f"The solution for Part 2 is {Solution.part_2(input)}")
