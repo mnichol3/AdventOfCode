@@ -71,10 +71,8 @@ if __name__ == "__main__":
     input = Solution.read_input(input_fname)
 
     soln_1 = Solution.part_1(input)
-    print(f"Solution to part 1: {soln_1}")
 
     soln_2 = Solution.part_2(input)
-    print(f"Solution to part 2: {soln_2}")
 
 '''
 
@@ -113,3 +111,4 @@ if __name__ == "__main__":
     args = parse_args()
 
     create_solution_file(root_dir, args.day_num)
+
