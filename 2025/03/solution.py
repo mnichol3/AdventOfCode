@@ -16,7 +16,7 @@ class Solution:
 
         for bank in banks:
             curr_joltage = 0
-            max_joltage = -10e10
+            max_joltage = -1
 
             for i in range(len(bank) - 1):
                 for j in range(i + 1, len(bank)):

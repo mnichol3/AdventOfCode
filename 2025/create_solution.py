@@ -6,6 +6,7 @@ TEMPLATE = '''
 """Advent of Code 2025 - Day {day_number} Parts 1 and 2"""
 from pathlib import Path
 
+
 class Solution:
 
     @classmethod
