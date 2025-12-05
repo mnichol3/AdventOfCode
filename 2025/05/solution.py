@@ -52,9 +52,9 @@ class Solution:
         """Solution to Part 2.
 
         The idea here is to combine as many adjacent/overlapping ID ranges as
-        we can, then sum the sizes of each range.
+        we can, then sum the sizes of the ranges.
 
-        Attempting to solve this part the an approach similar to Part 1 will
+        Attempting to solve this part with an approach similar to Part 1 will
         lead to memory errors due to the size of the integers in the puzzle
         input.
         """
