@@ -31,8 +31,8 @@ class Solution:
         int
             Sum of equations.
 
-        Writeup
-        -------
+        Breakdown
+        ---------
         This part is pretty straight-forward. Essentially, we create a 2D list
         containing lists of row values and transpose it in order to group each
         equation into its own list. From there we just determine which math
@@ -73,8 +73,8 @@ class Solution:
         int
             Sum of equations.
 
-        Writeup
-        -------
+        Breakdown
+        ---------
         This part was a bit trickier than part 1. The logic here is to iterate
         over the columns from right to left in order to construct one equation
         at a time. Since we're moving right to left, we know we've constructed
