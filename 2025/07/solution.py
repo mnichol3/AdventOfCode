@@ -1,4 +1,3 @@
-
 """Advent of Code 2025 - Day 07 Parts 1 and 2."""
 from pathlib import Path
 
@@ -41,23 +40,17 @@ class Solution:
         TODO
         """
         num_splits = 0
-        n_cols = len(inp[0])
-        start_pos = inp[0].index("S")
 
-        beams = [" "] * n_cols
-        beams[start_pos] = "|"
+        beams = [" "] * len(inp[0])
+        beams[inp[0].index("S")] = "|"
 
         for row in inp[1:]:
             for col_idx, col_val in enumerate(row):
                 if col_val == "^" and beams[col_idx] == "|":
                     num_splits += 1
                     beams[col_idx] = " "
-
-                    for offset in [-1, 1]:
-                        try:
-                            beams[col_idx + offset] = "|"
-                        except IndexError:
-                            pass
+                    beams[col_idx - 1] = "|"
+                    beams[col_idx + 1] = "|"
 
         return num_splits
 
@@ -79,7 +72,18 @@ class Solution:
         ---------
         TODO
         """
-        return 0
+        timelines = [0] * len(inp[0])
+        timelines[inp[0].index("S")] += 1
+
+        for row in inp:
+            for col_idx, col_val in enumerate(row):
+                if col_val == "^":
+                    curr_val = timelines[col_idx]
+                    timelines[col_idx] = 0
+                    timelines[col_idx - 1] += curr_val
+                    timelines[col_idx + 1] += curr_val
+
+        return sum(timelines)
 
 
 if __name__ == "__main__":
