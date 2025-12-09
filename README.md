@@ -4,13 +4,13 @@
 
 | Week 1             | Week 2              |
 | ------------------ | ------------------- |
-| Day 1 :star::star: | Day 8               |
+| Day 1 :star::star: | Day 8 :star::star:  |
 | Day 2 :star::star: | Day 9               |
 | Day 3 :star::star: | Day 10              |
 | Day 4 :star::star: | Day 11              |
 | Day 5 :star::star: | Day 12              |
 | Day 6 :star::star: | :snowman::snowflake::snowman::snowflake::snowman: |
-| Day 7              | :snowflake::snowman::snowflake::snowman::snowflake: |
+| Day 7 :star::star: | :snowflake::snowman::snowflake::snowman::snowflake: |
 
 ## [2024](https://adventofcode.com/2024) Progress
 
