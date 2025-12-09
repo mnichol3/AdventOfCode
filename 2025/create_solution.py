@@ -37,6 +37,10 @@ class Solution:
         -------
         int
             Puzzle solution.
+
+        Breakdown
+        ---------
+        TODO
         """
         return 0
 
@@ -53,6 +57,10 @@ class Solution:
         -------
         int
             Puzzle solution.
+
+        Breakdown
+        ---------
+        TODO
         """
         return 0
 
