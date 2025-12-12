@@ -4,14 +4,15 @@ from pathlib import Path
 
 TEMPLATE = '''"""Advent of Code 2025 - Day {day_number} Parts 1 and 2."""
 from pathlib import Path
+from typing import Any
 
 
 class Solution:
     """Advent of Code 2025 - Day {day_number} Part 1 and 2 solutions."""
 
     @classmethod
-    def read_input(cls, f_path: str | Path) -> list[str]:
-        """Read puzzle input and return as a list of strings.
+    def read_input(cls, f_path: str | Path) -> Any:
+        """Read puzzle input.
 
         Parameters
         ----------
@@ -20,17 +21,17 @@ class Solution:
 
         Returns
         -------
-        list[str]
+        Any
         """
         return Path(f_path).read_text(encoding="utf-8").split()
 
     @classmethod
-    def part_1(cls, inp: list[str]) -> int:
+    def part_1(cls, inp: Any) -> int:
         """Solution to Part 1.
 
         Parameters
         ----------
-        inp : list[str]
+        inp : Any
             Puzzle input.
 
         Returns
@@ -45,12 +46,12 @@ class Solution:
         return 0
 
     @classmethod
-    def part_2(cls, inp: list[str]) -> int:
+    def part_2(cls, inp: Any) -> int:
         """Solution to Part 2.
 
         Parameters
         ----------
-        inp : list[str]
+        inp : Any
             Puzzle input.
 
         Returns

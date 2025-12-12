@@ -9,7 +9,7 @@ class Solution:
 
     @classmethod
     def read_input(cls, f_path: str | Path) -> Any:
-        """Read puzzle input and return as a list of strings.
+        """Read puzzle input.
 
         Parameters
         ----------
