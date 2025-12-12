@@ -30,7 +30,7 @@ class Solution:
 
         Parameters
         ----------
-        inp: list[str]
+        inp : list[str]
             Puzzle input.
 
         Returns
@@ -50,7 +50,7 @@ class Solution:
 
         Parameters
         ----------
-        inp: list[str]
+        inp : list[str]
             Puzzle input.
 
         Returns
